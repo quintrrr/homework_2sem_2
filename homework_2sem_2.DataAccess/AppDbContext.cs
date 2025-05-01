@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace homework_2sem_2.DataAccess
 {
-    public class AppDbContext : DbContext
+    public class AppDbContext(DbContextOptions<AppDbContext> options) : DbContext(options)
     {
         public DbSet<Lottery> Lotteries { get; set; }
 
