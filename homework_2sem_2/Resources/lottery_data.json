@@ -1,0 +1,382 @@
+{
+  "lotteries": [
+    {
+      "id": "05a46525-aa59-4054-8967-825d99c8057e",
+      "name": "Мегалотерея",
+      "ticketPrice": 200,
+      "numberRange": {
+        "min": 1,
+        "max": 45,
+        "numbersPerTicket": 6
+      },
+      "winningCombination": [
+        5,
+        12,
+        23,
+        34,
+        38,
+        42
+      ],
+      "prizeFund": 5000000,
+      "drawTime": "2025-06-01T18:00:00Z"
+    },
+    {
+      "id": "e797986c-a5ce-46da-8777-cdd257b1463d",
+      "name": "Суперджекпот",
+      "ticketPrice": 300,
+      "numberRange": {
+        "min": 1,
+        "max": 50,
+        "numbersPerTicket": 6
+      },
+      "winningCombination": [
+        1,
+        7,
+        14,
+        21,
+        28,
+        35
+      ],
+      "prizeFund": 7000000,
+      "drawTime": "2025-07-10T19:00:00Z"
+    },
+    {
+      "id": "3ca1341d-790c-43c0-b52c-277b3297f370",
+      "name": "Удача 777",
+      "ticketPrice": 150,
+      "numberRange": {
+        "min": 1,
+        "max": 35,
+        "numbersPerTicket": 5
+      },
+      "winningCombination": [
+        3,
+        7,
+        17,
+        27,
+        33
+      ],
+      "prizeFund": 3000000,
+      "drawTime": "2025-08-15T20:00:00Z"
+    }
+  ],
+  "participants": [
+    {
+      "id": "230cee97-35bc-4165-ab86-63ac0bfcc52b",
+      "contactInfo": {
+        "phone": "+79161234567",
+        "email": "ivan@example.com",
+        "address": "ул. Ленина, д. 10, кв. 5"
+      },
+      "birthDate": "1990-05-20",
+      "name": "Иван Иванов"
+    },
+    {
+      "id": "f54fedad-2696-4fd3-bbb6-bb7653cdf5b9",
+      "contactInfo": {
+        "phone": "+79161234568",
+        "email": "petr@example.com",
+        "address": "ул. Победы, д. 25, кв. 12"
+      },
+      "birthDate": "1985-07-15",
+      "name": "Петр Петров"
+    },
+    {
+      "id": "7b0a64fa-fa51-41a0-aa4c-8b3a63573649",
+      "contactInfo": {
+        "phone": "+79161234569",
+        "email": "sergey@example.com",
+        "address": "ул. Мира, д. 7, кв. 23"
+      },
+      "birthDate": "1992-11-03",
+      "name": "Сергей Сергеев"
+    },
+    {
+      "id": "91c408ad-8089-4352-80f2-a18ab8e65616",
+      "contactInfo": {
+        "phone": "+79161234570",
+        "email": "anna@example.com",
+        "address": "ул. Гоголя, д. 55, кв. 9"
+      },
+      "birthDate": "1995-03-30",
+      "name": "Анна Антонова"
+    },
+    {
+      "id": "0013df30-5974-479c-8189-2c3a1de7922a",
+      "contactInfo": {
+        "phone": "+79161234571",
+        "email": "elena@example.com",
+        "address": "ул. Садовая, д. 15, кв. 7"
+      },
+      "birthDate": "1988-12-25",
+      "name": "Елена Еленова"
+    }
+  ],
+  "tickets": [
+    {
+      "id": "90249146-05f5-495e-b3f5-b7726919f404",
+      "isWinning": true,
+      "numbers": [
+        5,
+        12,
+        23,
+        34,
+        38,
+        42
+      ],
+      "purchaseInfo": {
+        "date": "2025-04-15T10:30:00Z",
+        "purchaseNumber": "571bf94d-b8b7-4b73-b73c-957a25effff0"
+      },
+      "lotteryId": "05a46525-aa59-4054-8967-825d99c8057e",
+      "ownerId": "230cee97-35bc-4165-ab86-63ac0bfcc52b"
+    },
+    {
+      "id": "89b625c7-c62e-4731-8946-de6c1d45a15d",
+      "isWinning": false,
+      "numbers": [
+        3,
+        14,
+        22,
+        31,
+        41,
+        45
+      ],
+      "purchaseInfo": {
+        "date": "2025-04-16T11:00:00Z",
+        "purchaseNumber": "878f5a09-e0db-4c50-ae99-c79d1ef60a8b"
+      },
+      "lotteryId": "05a46525-aa59-4054-8967-825d99c8057e",
+      "ownerId": "f54fedad-2696-4fd3-bbb6-bb7653cdf5b9"
+    },
+    {
+      "id": "490f2974-96eb-48ce-95b3-bf16a7a82b3b",
+      "isWinning": false,
+      "numbers": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "purchaseInfo": {
+        "date": "2025-04-17T09:15:00Z",
+        "purchaseNumber": "bbf73849-2b51-4bde-81e1-544231939873"
+      },
+      "lotteryId": "05a46525-aa59-4054-8967-825d99c8057e",
+      "ownerId": "7b0a64fa-fa51-41a0-aa4c-8b3a63573649"
+    },
+    {
+      "id": "82120f9e-3633-49e0-9b90-624d7e67dba8",
+      "isWinning": false,
+      "numbers": [
+        1,
+        5,
+        15,
+        25,
+        35,
+        45
+      ],
+      "purchaseInfo": {
+        "date": "2025-04-18T13:30:00Z",
+        "purchaseNumber": "6b224d4f-9a73-44c1-aecc-f78303b9cb7c"
+      },
+      "lotteryId": "05a46525-aa59-4054-8967-825d99c8057e",
+      "ownerId": "91c408ad-8089-4352-80f2-a18ab8e65616"
+    },
+    {
+      "id": "92fd4fd8-928f-4bb3-9264-c4c9742ec97b",
+      "isWinning": false,
+      "numbers": [
+        2,
+        13,
+        22,
+        33,
+        42,
+        44
+      ],
+      "purchaseInfo": {
+        "date": "2025-04-19T14:45:00Z",
+        "purchaseNumber": "0ce13fc3-f36d-4757-914e-8e11b65d5a7b"
+      },
+      "lotteryId": "05a46525-aa59-4054-8967-825d99c8057e",
+      "ownerId": "0013df30-5974-479c-8189-2c3a1de7922a"
+    },
+    {
+      "id": "bb35c748-b611-4178-97b8-e1e26d3c93cb",
+      "isWinning": false,
+      "numbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "purchaseInfo": {
+        "date": "2025-05-01T10:00:00Z",
+        "purchaseNumber": "69ae844f-77e0-4a34-a39b-ce812cc3894a"
+      },
+      "lotteryId": "e797986c-a5ce-46da-8777-cdd257b1463d",
+      "ownerId": "230cee97-35bc-4165-ab86-63ac0bfcc52b"
+    },
+    {
+      "id": "d9a551b7-6ccf-4c22-b4ac-951668244a60",
+      "isWinning": true,
+      "numbers": [
+        1,
+        7,
+        14,
+        21,
+        28,
+        35
+      ],
+      "purchaseInfo": {
+        "date": "2025-05-02T11:30:00Z",
+        "purchaseNumber": "d9130bfb-1867-4d72-a915-53d7db52162f"
+      },
+      "lotteryId": "e797986c-a5ce-46da-8777-cdd257b1463d",
+      "ownerId": "f54fedad-2696-4fd3-bbb6-bb7653cdf5b9"
+    },
+    {
+      "id": "68edeb7c-6bff-4eb2-9140-0c5020208574",
+      "isWinning": false,
+      "numbers": [
+        5,
+        10,
+        15,
+        20,
+        25,
+        30
+      ],
+      "purchaseInfo": {
+        "date": "2025-05-03T12:45:00Z",
+        "purchaseNumber": "a52c7e71-5f99-4205-bb5c-0ebe04347f66"
+      },
+      "lotteryId": "e797986c-a5ce-46da-8777-cdd257b1463d",
+      "ownerId": "7b0a64fa-fa51-41a0-aa4c-8b3a63573649"
+    },
+    {
+      "id": "ba5733be-2d25-452f-aadf-d2f2d204b2f6",
+      "isWinning": false,
+      "numbers": [
+        6,
+        12,
+        18,
+        24,
+        30,
+        36
+      ],
+      "purchaseInfo": {
+        "date": "2025-05-04T13:55:00Z",
+        "purchaseNumber": "089d5724-3c27-4e1e-91b8-a84ab5d25a4b"
+      },
+      "lotteryId": "e797986c-a5ce-46da-8777-cdd257b1463d",
+      "ownerId": "91c408ad-8089-4352-80f2-a18ab8e65616"
+    },
+    {
+      "id": "c8769974-b001-4913-b3c7-7998ac5ea78c",
+      "isWinning": false,
+      "numbers": [
+        8,
+        16,
+        24,
+        32,
+        40,
+        48
+      ],
+      "purchaseInfo": {
+        "date": "2025-05-05T14:10:00Z",
+        "purchaseNumber": "140f0b1e-d678-47ed-91cd-9ee3e907309e"
+      },
+      "lotteryId": "e797986c-a5ce-46da-8777-cdd257b1463d",
+      "ownerId": "0013df30-5974-479c-8189-2c3a1de7922a"
+    },
+    {
+      "id": "7646c303-a644-4693-b4fd-ea5f602b6296",
+      "isWinning": false,
+      "numbers": [
+        2,
+        7,
+        12,
+        22,
+        32
+      ],
+      "purchaseInfo": {
+        "date": "2025-06-01T15:00:00Z",
+        "purchaseNumber": "16ab9bb0-9aa8-4527-87b1-2376c3a33da5"
+      },
+      "lotteryId": "3ca1341d-790c-43c0-b52c-277b3297f370",
+      "ownerId": "230cee97-35bc-4165-ab86-63ac0bfcc52b"
+    },
+    {
+      "id": "bba6d420-4293-49a5-8455-b90eae897a2b",
+      "isWinning": false,
+      "numbers": [
+        3,
+        8,
+        13,
+        18,
+        23
+      ],
+      "purchaseInfo": {
+        "date": "2025-06-02T16:00:00Z",
+        "purchaseNumber": "0bfe68e0-a596-49e6-8255-9298f143032d"
+      },
+      "lotteryId": "3ca1341d-790c-43c0-b52c-277b3297f370",
+      "ownerId": "f54fedad-2696-4fd3-bbb6-bb7653cdf5b9"
+    },
+    {
+      "id": "f06b068a-5b5d-4b51-b604-e49b7235fa16",
+      "isWinning": true,
+      "numbers": [
+        3,
+        7,
+        17,
+        27,
+        33
+      ],
+      "purchaseInfo": {
+        "date": "2025-06-03T17:00:00Z",
+        "purchaseNumber": "f51ac8a8-e379-4532-80d9-9b1a0b875e52"
+      },
+      "lotteryId": "3ca1341d-790c-43c0-b52c-277b3297f370",
+      "ownerId": "7b0a64fa-fa51-41a0-aa4c-8b3a63573649"
+    },
+    {
+      "id": "efad4928-51d4-47f1-99d4-0f83a86ee8f1",
+      "isWinning": false,
+      "numbers": [
+        4,
+        9,
+        14,
+        19,
+        24
+      ],
+      "purchaseInfo": {
+        "date": "2025-06-04T18:00:00Z",
+        "purchaseNumber": "0aaedd4b-fea3-4950-ae5b-c09e8f85aaf2"
+      },
+      "lotteryId": "3ca1341d-790c-43c0-b52c-277b3297f370",
+      "ownerId": "91c408ad-8089-4352-80f2-a18ab8e65616"
+    },
+    {
+      "id": "5608f360-be1d-437b-8d3f-0518fd020e63",
+      "isWinning": false,
+      "numbers": [
+        5,
+        10,
+        15,
+        20,
+        25
+      ],
+      "purchaseInfo": {
+        "date": "2025-06-05T19:00:00Z",
+        "purchaseNumber": "98b4c791-0c63-432b-922c-2d895f90b67b"
+      },
+      "lotteryId": "3ca1341d-790c-43c0-b52c-277b3297f370",
+      "ownerId": "0013df30-5974-479c-8189-2c3a1de7922a"
+    }
+  ]
+}
