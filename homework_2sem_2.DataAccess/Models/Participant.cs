@@ -10,7 +10,7 @@
 
         public string Name { get; set; } = string.Empty;
 
-        public List<Ticket> TicketList { get; set; } = [];
+        public List<Ticket> Tickets { get; set; } = [];
 
     }
 
