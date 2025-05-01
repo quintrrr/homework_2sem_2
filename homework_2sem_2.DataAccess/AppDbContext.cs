@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using homework_2sem_2.DataAccess.Configurations;
 using homework_2sem_2.DataAccess.Models;
 using Microsoft.EntityFrameworkCore;
 
@@ -15,5 +16,14 @@ namespace homework_2sem_2.DataAccess
         public DbSet<Participant> Participants { get; set; }
 
         public DbSet<Ticket> Tickets { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.ApplyConfiguration(new LotteryConfiguration());
+            modelBuilder.ApplyConfiguration(new ParticipantConfiguration());
+            modelBuilder.ApplyConfiguration(new TicketConfiguration());
+
+            base.OnModelCreating(modelBuilder);
+        }
     }
 }
