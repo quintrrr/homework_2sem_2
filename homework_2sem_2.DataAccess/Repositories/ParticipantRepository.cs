@@ -41,7 +41,22 @@ namespace homework_2sem_2.DataAccess.Repositories
             _dbContext.SaveChanges();
         }
 
-
+        public object? GetInfoById(Guid id)
+        {
+            return _dbContext.Participants
+                .Where(p => p.Id == id)
+                .AsNoTracking()
+                .Select(p => new
+                {
+                    p.Id,
+                    p.Name,
+                    p.BirthDate,
+                    p.ContactInfo.Email,
+                    p.ContactInfo.Address,
+                    p.ContactInfo.Phone,
+                    TicketsCount = p.Tickets.Count(),
+                }).FirstOrDefault();
+        }
     }
 
 }

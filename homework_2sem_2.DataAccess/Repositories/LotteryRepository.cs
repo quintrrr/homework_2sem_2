@@ -46,7 +46,25 @@ namespace homework_2sem_2.DataAccess.Repositories
             _dbContext.SaveChanges();
         }
 
-        
+        public object? GetInfoById(Guid id)
+        {
+            return _dbContext.Lotteries
+                .Where(l => l.Id == id)
+                .AsNoTracking()
+                .Select(l => new
+                {
+                    l.Id,
+                    l.Name,
+                    l.DrawTime,
+                    l.TicketPrice,
+                    l.NumberRange.Min,
+                    l.NumberRange.Max,
+                    l.NumberRange.NumbersPerTicket,
+                    WinningCombination = String.Join(",", l.WinningCombination),
+                    l.PrizeFund,
+                    TicketsCount = l.Tickets.Count(),
+                }).FirstOrDefault();
+        }
     }
 
 }

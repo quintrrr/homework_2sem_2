@@ -41,7 +41,22 @@ namespace homework_2sem_2.DataAccess.Repositories
             _dbContext.SaveChanges();
         }
 
-
+        public object? GetInfoById(Guid id)
+        {
+            return _dbContext.Tickets
+                .Where(t => t.Id == id)
+                .AsNoTracking()
+                .Select(t => new
+                {
+                    t.Id,
+                    OwnerName = t.Owner.Name,
+                    LotteryName = t.Lottery.Name,
+                    t.IsWinning,
+                    Numbers = String.Join(",", t.Numbers),
+                    PurchaseDate = t.PurchaseInfo.Date,
+                    t.PurchaseInfo.PurchaseNumber,
+                }).FirstOrDefault();
+        }
     }
 
 }

@@ -95,12 +95,14 @@
             // btnOpenInfo
             // 
             btnOpenInfo.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            btnOpenInfo.Enabled = false;
             btnOpenInfo.Location = new Point(128, 3);
             btnOpenInfo.Name = "btnOpenInfo";
             btnOpenInfo.Size = new Size(120, 32);
             btnOpenInfo.TabIndex = 1;
             btnOpenInfo.Text = "Информация";
             btnOpenInfo.UseVisualStyleBackColor = true;
+            btnOpenInfo.Click += btnOpenInfo_Click;
             // 
             // picture
             // 
@@ -122,6 +124,7 @@
             entitiesTree.Size = new Size(243, 315);
             entitiesTree.TabIndex = 2;
             entitiesTree.AfterSelect += entitiesTree_AfterSelect;
+            entitiesTree.NodeMouseDoubleClick += entitiesTree_NodeMouseDoubleClick;
             // 
             // infoTable
             // 

@@ -115,9 +115,47 @@ namespace homework_2sem_2
             }
         }
 
+        private void ShowInfo()
+        {
+            var tag = entitiesTree.SelectedNode.Tag;
+            object? entity = null;
+
+            if (tag is Lottery lottery)
+            {
+                entity = lotteryRepository.GetInfoById(lottery.Id);
+            }
+            else if (tag is Participant participant)
+            {
+                entity = participantRepository.GetInfoById(participant.Id);
+            }
+            else if (tag is Ticket ticket)
+            {
+                entity = ticketRepository.GetInfoById(ticket.Id);
+            }
+
+            if (entity == null)
+            {
+                return;
+            }
+
+            FormInfo formInfo = new FormInfo(entity);
+            formInfo.ShowDialog();
+        }
+
         private void entitiesTree_AfterSelect(object sender, TreeViewEventArgs e)
         {
             var selectedNode = e.Node;
+
+            if (selectedNode != null
+                && (selectedNode.Tag is Lottery || selectedNode.Tag is Participant || selectedNode.Tag is Ticket))
+            {
+                btnOpenInfo.Enabled = true;
+            }
+            else
+            {
+                btnOpenInfo.Enabled = false;
+            }
+
             while (selectedNode != null && selectedNode.Tag != (object)"firstNode")
             {
                 selectedNode = selectedNode.Parent;
@@ -174,7 +212,7 @@ namespace homework_2sem_2
         }
 
         private void infoTable_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
-        { 
+        {
             if (infoTable.DataSource == null)
             {
                 return;
@@ -242,9 +280,19 @@ namespace homework_2sem_2
                     case "PurchaseNumber":
                         col.HeaderText = "Номер покупки";
                         break;
-                   
+
                 }
             }
+        }
+
+        private void btnOpenInfo_Click(object sender, EventArgs e)
+        {
+            ShowInfo();
+        }
+
+        private void entitiesTree_NodeMouseDoubleClick(object sender, TreeNodeMouseClickEventArgs e)
+        {
+            ShowInfo();
         }
     }
 }
