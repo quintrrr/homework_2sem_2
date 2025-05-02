@@ -27,6 +27,6 @@ namespace homework_2sem_2.DataAccess.Models
     {
         public DateTime Date { get; set; }
 
-        public Guid purchaseNumber { get; set; }
+        public Guid PurchaseNumber { get; set; }
     }
 }

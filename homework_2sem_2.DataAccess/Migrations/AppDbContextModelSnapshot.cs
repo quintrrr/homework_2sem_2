@@ -175,7 +175,7 @@ namespace homework_2sem_2.DataAccess.Migrations
                             b1.Property<DateTime>("Date")
                                 .HasColumnType("timestamp with time zone");
 
-                            b1.Property<Guid>("purchaseNumber")
+                            b1.Property<Guid>("PurchaseNumber")
                                 .HasColumnType("uuid");
 
                             b1.HasKey("TicketId");
