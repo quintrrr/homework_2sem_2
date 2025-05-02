@@ -121,6 +121,7 @@
             entitiesTree.Name = "entitiesTree";
             entitiesTree.Size = new Size(243, 315);
             entitiesTree.TabIndex = 2;
+            entitiesTree.AfterSelect += entitiesTree_AfterSelect;
             // 
             // infoTable
             // 
@@ -133,6 +134,7 @@
             infoTable.ReadOnly = true;
             infoTable.Size = new Size(530, 450);
             infoTable.TabIndex = 0;
+            infoTable.DataBindingComplete += infoTable_DataBindingComplete;
             // 
             // openFiles
             // 
