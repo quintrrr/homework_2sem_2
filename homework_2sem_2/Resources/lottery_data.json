@@ -68,7 +68,7 @@
         "email": "ivan@example.com",
         "address": "ул. Ленина, д. 10, кв. 5"
       },
-      "birthDate": "1990-05-20",
+      "birthDate": "1990-05-20T18:00:00Z",
       "name": "Иван Иванов"
     },
     {
@@ -78,7 +78,7 @@
         "email": "petr@example.com",
         "address": "ул. Победы, д. 25, кв. 12"
       },
-      "birthDate": "1985-07-15",
+      "birthDate": "1985-07-15T18:00:00Z",
       "name": "Петр Петров"
     },
     {
@@ -88,7 +88,7 @@
         "email": "sergey@example.com",
         "address": "ул. Мира, д. 7, кв. 23"
       },
-      "birthDate": "1992-11-03",
+      "birthDate": "1992-11-03T18:00:00Z",
       "name": "Сергей Сергеев"
     },
     {
@@ -98,7 +98,7 @@
         "email": "anna@example.com",
         "address": "ул. Гоголя, д. 55, кв. 9"
       },
-      "birthDate": "1995-03-30",
+      "birthDate": "1995-03-30T18:00:00Z",
       "name": "Анна Антонова"
     },
     {
@@ -108,7 +108,7 @@
         "email": "elena@example.com",
         "address": "ул. Садовая, д. 15, кв. 7"
       },
-      "birthDate": "1988-12-25",
+      "birthDate": "1988-12-25T18:00:00Z",
       "name": "Елена Еленова"
     }
   ],

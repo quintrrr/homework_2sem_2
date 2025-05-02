@@ -17,7 +17,7 @@ namespace homework_2sem_2
             const string connectionString = "Host=193.176.190.148;Port=5432;Database=lottery;Username=homework;Password=qwerty";
             var options = new DbContextOptionsBuilder<AppDbContext>().UseNpgsql(connectionString).Options;
             using var db = new AppDbContext(options);
-            Application.Run(new MainForm());
+            Application.Run(new MainForm(db));
         }
     }
 }

@@ -65,7 +65,7 @@
     <Participant>
       <Id>230cee97-35bc-4165-ab86-63ac0bfcc52b</Id>
       <Name>Иван Иванов</Name>
-      <BirthDate>1990-05-20</BirthDate>
+      <BirthDate>1990-05-20T18:00:00Z</BirthDate>
       <ContactInfo>
         <Phone>+79161234567</Phone>
         <Email>ivan@example.com</Email>
@@ -75,7 +75,7 @@
     <Participant>
       <Id>f54fedad-2696-4fd3-bbb6-bb7653cdf5b9</Id>
       <Name>Петр Петров</Name>
-      <BirthDate>1985-07-15</BirthDate>
+      <BirthDate>1985-07-15T18:00:00Z</BirthDate>
       <ContactInfo>
         <Phone>+79161234568</Phone>
         <Email>petr@example.com</Email>
@@ -85,7 +85,7 @@
     <Participant>
       <Id>7b0a64fa-fa51-41a0-aa4c-8b3a63573649</Id>
       <Name>Сергей Сергеев</Name>
-      <BirthDate>1992-11-03</BirthDate>
+      <BirthDate>1992-11-03T18:00:00Z</BirthDate>
       <ContactInfo>
         <Phone>+79161234569</Phone>
         <Email>sergey@example.com</Email>
@@ -95,7 +95,7 @@
     <Participant>
       <Id>91c408ad-8089-4352-80f2-a18ab8e65616</Id>
       <Name>Анна Антонова</Name>
-      <BirthDate>1995-03-30</BirthDate>
+      <BirthDate>1995-03-30T18:00:00Z</BirthDate>
       <ContactInfo>
         <Phone>+79161234570</Phone>
         <Email>anna@example.com</Email>
@@ -105,7 +105,7 @@
     <Participant>
       <Id>0013df30-5974-479c-8189-2c3a1de7922a</Id>
       <Name>Елена Еленова</Name>
-      <BirthDate>1988-12-25</BirthDate>
+      <BirthDate>1988-12-25T18:00:00Z</BirthDate>
       <ContactInfo>
         <Phone>+79161234571</Phone>
         <Email>elena@example.com</Email>
