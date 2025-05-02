@@ -12,7 +12,7 @@ using homework_2sem_2.DataAccess;
 namespace homework_2sem_2.DataAccess.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20250501153041_initial")]
+    [Migration("20250502121926_initial")]
     partial class initial
     {
         /// <inheritdoc />
@@ -89,9 +89,6 @@ namespace homework_2sem_2.DataAccess.Migrations
 
                     b.Property<Guid>("OwnerId")
                         .HasColumnType("uuid");
-
-                    b.Property<decimal>("PrizeFund")
-                        .HasColumnType("numeric");
 
                     b.HasKey("Id");
 

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net.Sockets;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace homework_2sem_2.DataAccess.Models
@@ -23,6 +24,7 @@ namespace homework_2sem_2.DataAccess.Models
 
         public DateTime DrawTime { get; set; }
 
+        [JsonIgnore]
         public List<Ticket> Tickets { get; set; } = [];
     }
 

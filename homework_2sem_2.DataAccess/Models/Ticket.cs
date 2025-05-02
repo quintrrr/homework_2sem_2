@@ -1,4 +1,6 @@
-﻿namespace homework_2sem_2.DataAccess.Models
+﻿using System.Text.Json.Serialization;
+
+namespace homework_2sem_2.DataAccess.Models
 {
     public class Ticket
     {
@@ -10,10 +12,10 @@
 
         public PurchaseInfo? PurchaseInfo { get; set; }
 
-        public decimal PrizeFund { get; set; }
-
+        [JsonIgnore]
         public Participant? Owner { get; set; }
 
+        [JsonIgnore]
         public Lottery? Lottery { get; set; }
 
         public Guid LotteryId { get; set; }

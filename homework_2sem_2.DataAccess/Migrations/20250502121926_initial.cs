@@ -55,7 +55,6 @@ namespace homework_2sem_2.DataAccess.Migrations
                     Numbers = table.Column<int[]>(type: "integer[]", nullable: false),
                     PurchaseInfo_Date = table.Column<DateTime>(type: "timestamp with time zone", nullable: true),
                     PurchaseInfo_purchaseNumber = table.Column<Guid>(type: "uuid", nullable: true),
-                    PrizeFund = table.Column<decimal>(type: "numeric", nullable: false),
                     LotteryId = table.Column<Guid>(type: "uuid", nullable: false),
                     OwnerId = table.Column<Guid>(type: "uuid", nullable: false)
                 },

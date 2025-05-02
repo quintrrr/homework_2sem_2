@@ -87,9 +87,6 @@ namespace homework_2sem_2.DataAccess.Migrations
                     b.Property<Guid>("OwnerId")
                         .HasColumnType("uuid");
 
-                    b.Property<decimal>("PrizeFund")
-                        .HasColumnType("numeric");
-
                     b.HasKey("Id");
 
                     b.HasIndex("LotteryId");

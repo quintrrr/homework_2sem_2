@@ -90,6 +90,7 @@
             btnLoad.TabIndex = 0;
             btnLoad.Text = "Открыть файл";
             btnLoad.UseVisualStyleBackColor = true;
+            btnLoad.Click += btnLoad_Click;
             // 
             // btnOpenInfo
             // 

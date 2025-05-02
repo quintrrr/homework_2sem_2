@@ -1,4 +1,6 @@
-﻿namespace homework_2sem_2.DataAccess.Models
+﻿using System.Text.Json.Serialization;
+
+namespace homework_2sem_2.DataAccess.Models
 {
     public class Participant
     {
@@ -10,6 +12,7 @@
 
         public string Name { get; set; } = string.Empty;
 
+        [JsonIgnore]
         public List<Ticket> Tickets { get; set; } = [];
 
     }
